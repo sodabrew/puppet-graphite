@@ -1,0 +1,4 @@
+#!/bin/sh
+echo "Starting carbon-aggregator..."
+cd /opt/graphite
+exec setuidgid graphite ./bin/carbon-aggregator.py --debug start 2>&1

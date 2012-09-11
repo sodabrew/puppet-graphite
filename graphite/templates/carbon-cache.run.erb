@@ -1,0 +1,4 @@
+#!/bin/sh
+echo "Starting carbon-cache..."
+cd /opt/graphite
+exec setuidgid graphite ./bin/carbon-cache.py --debug start 2>&1
